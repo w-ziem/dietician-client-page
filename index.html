@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twoje Imię | Dietetyk</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="...">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <meta name="description" content="Profesjonalne usługi dietetyczne. Pomagam kobietom i mężczyznom osiągnąć zdrowie, energię i lekkość – bez restrykcji i zbędnego stresu.">
+    <meta name="keywords" content="dietetyk, zdrowe odżywianie, konsultacje dietetyczne, jadłospis, zdrowe nawyki, dieta, zdrowie, energia, lekkość, Warszawa">
+    <meta name="author" content="w-ziem">
+    <meta property="og:title" content="Twoje Imię | Dietetyk">
+    <meta property="og:description" content="Profesjonalne usługi dietetyczne. Pomagam kobietom i mężczyznom osiągnąć zdrowie, energię i lekkość – bez restrykcji i zbędnego stresu.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="https://twoje-imie-dietetyk.pl">
+    <meta property="og:type" content="website">
 </head>
 <body>
 
@@ -15,10 +23,10 @@
         </a>
         
         <nav>
-            <a href="#about" class="link">O mnie</a>
-            <a href="#services" class="link">Usługi</a>
-            <a href="#testimonials" class="link">Opinie</a>
-            <a href="#contact" class="button link header-button">Kontakt</a>
+            <a id="about-link" href="#" class="link">O mnie</a>
+            <a id="services-link" href="#" class="link">Usługi</a>
+            <a id="testimonials-link" href="#" class="link">Opinie</a>
+            <a id="contact-button" href="#" class="button link header-button">Kontakt</a>
         </nav>
     </header>
 
@@ -26,7 +34,7 @@
         <div class="hero-content">
             <h1>Zdrowe nawyki zaczynają się od zrozumienia swojego ciała</h1>
             <p>Pomagam kobietom i mężczyznom osiągnąć zdrowie, energię i lekkość – bez restrykcji i zbędnego stresu. Zrób pierwszy krok już dziś.</p>
-            <a href="#contact" class="button hero-button">Umów konsultację</a>
+            <a id="contact-button" href="#" class="button hero-button">Umów konsultację</a>
         </div>
 <!-- 
         <div class="img-container">
@@ -64,7 +72,7 @@
                 <li>Stały kontakt i realne wsparcie – nie tylko w dniu wizyty</li>
             </ul>
 
-            <a href="#kontakt" class="button hero-button">Porozmawiajmy!</a>
+            <a id="contact-button" href="#" class="button hero-button">Porozmawiajmy!</a>
         </div>
 
         <div class="img-container">
@@ -126,7 +134,7 @@
                 <div class="stat-box">
                     <strong>8 lat</strong>
                     <span>doświadczenia</span>
-                </div>`
+                </div>
                 <div class="stat-box">
                     <strong>1380+</strong>
                     <span>zgubionych kilogramów</span>
@@ -141,24 +149,24 @@
         </div>
     </section>
 
-    <section class="testimonials">
+    <section id="testimonials">
         <div class="testimonials-content">
             <p class="heading">opinie</p>
-            <h1>Co mówią osoby, z którymi pracowałam?</h1>
+            <h2>Co mówią osoby, z którymi pracowałam?</h2>
             <div class="testimonials-container">
-                <div class="testimonial-">
+                <div class="testimonial-card">
                     <h3>Izabela, 53 lata</h3>
                     <p class="stars"></p>
-                    <p class="testimonial-text"></p>
+                    <p class="testimonial-text">&quot;Praca z dietetykiem to była najlepsza decyzja w moim życiu!&quot;</p>
                 </div>
 
-                <div class="testimonial-">
+                <div class="testimonial-card">
                     <h3>Anna, 34 lata</h3> <!--before avatar-->
                     <p class="stars"></p>
                     <p class="testimonial-text">&quot;Pierwszy raz czuję, że jem normalnie i chudnę bez wyrzutów sumienia. Mega polecam!&quot;</p>
                 </div>
 
-                <div class="testimonial-">
+                <div class="testimonial-card">
                     <h3>Michał, 29 lat</h3>
                     <p class="stars"></p>
                     <p class="testimonial-text">&quot;W końcu mam energię, lepiej śpię i przestałem żyć na kawie i fast foodzie.&quot;</p>
@@ -167,26 +175,26 @@
         </div>
     </section>
 
-    <section class="contact">
-        <div class="contant-content">
-            <h2></h2>
+    <section id="contact">
+        <div class="contact-content">
+            <h2>Porozmawiajmy!</h2>
             <p></p>
 
             <div class="alternate-contact">
                 <h4>Konsultacje online oraz stacjonarnie: Warszawa, Wola</h4>
-                <p>Telefon: </p>
-                <p>Email: </p>
+                <a href="tel:+48123123123">Telefon:  +48 123 123 123</a>
+                <a href="mailto:kontakt@dietytyk.pl">Email: kontakt@dietytyk.pl</a>
             </div>
 
             <div class="form-container">
                 <form id="contact-form" action="">
-                    <h5>Wyślij mi wiadomość</h4>
-                    <input type="text" name="frist-name" placeholder="Imię" required>
-                    <input type="text" name="last-name" placeholder="Nazwisko" required>
-                    <input type="tel" name="phone" placeholder="Telefon" required>
-                    <input type="email" name="email" placeholder="Email" required>
+                    <h5>Wyślij mi wiadomość</h5>
+                    <input class="input1" type="text" name="first-name" placeholder="Imię" required>
+                    <input class="input2" type="text" name="last-name" placeholder="Nazwisko" required>
+                    <input class="input3" type="tel" name="phone" placeholder="Telefon" required>
+                    <input class="input4" type="email" name="email" placeholder="Email" required>
                     <textarea name="message" placeholder="Wiadomość" required></textarea>
-                    <button class="button send-button" type="submit">Wyślij</button>
+                    <button class="button hero-button send-button" type="submit">Wyślij</button>
                 </form>
             </div>
         </div>
@@ -197,11 +205,40 @@
     </section>
 
     <footer>
-        <div class="footer-content">
-            <!-- TODO FOOTER -->
+        <div class="footer-container">
+            
+            <div class="footer-section about">
+            <h4>O mnie</h4>
+            <p>Jestem dyplomowaną dietetyczką pomagającą ludziom jeść świadomie i z przyjemnością. Wierzę w realne zmiany i ludzkie podejście.</p>
+            </div>
+
+            <div class="footer-section contact">
+            <h4>Kontakt</h4>
+            <ul>
+                <li><a href="mailto:anna@example.com">anna@example.com</a></li>
+                <li><a href="tel:+48123456789">+48 123 456 789</a></li>
+                <li>ul. Zdrowa 5, Warszawa</li>
+            </ul>
+            </div>
+
+            <div class="footer-section links">
+            <h4>Szybkie linki</h4>
+            <ul>
+                <li><a href="#services">Oferta</a></li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#testimonials">Opinie</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            </div>
+            
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Anna – Dietetyka z podejściem. Wszelkie prawa zastrzeżone.</p>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 
 </body>
 </html>
