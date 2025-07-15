@@ -61,7 +61,7 @@ nav{
 }
 
 nav .link{
-    transition: all 0.3s ease;
+    transition: all 0.3s ease !important;
     font-weight: 500;
 }
 
@@ -77,7 +77,7 @@ nav .button:hover{
 .button{
     padding: 10px 30px;
     border: 2px solid;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease !important;
     border-radius: 4px;
     font-weight: 600;
     display: inline-block;
@@ -288,7 +288,7 @@ footer{
     background-color: var(--light-bg-color);
     border-radius: 8px;
     box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -437,7 +437,7 @@ footer{
     min-width: 300px;
     padding: 1.5rem;
     box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease !important;
     height: auto;
     flex-shrink: 0;
 }
@@ -533,7 +533,7 @@ footer{
     font-size: 1.2rem;
     color: var(--text-color);
     text-decoration: underline;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease !important;
 }
 
 .alternate-contact a:hover{
@@ -591,7 +591,7 @@ footer{
     font-size: 1rem;
     width: 100%;
     background-color: rgba(163, 177, 138, 0.2);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease !important;
 }
 
 .input1, .input2, .input3, .input4, textarea{
