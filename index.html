@@ -17,6 +17,12 @@
     <meta property="og:type" content="website">
 </head>
 <body>
+    <div id="chat-button">💬 Porozmawiaj z asystentem AI</div>
+    <div id="chat-widget" >
+        <div id="chat-messages"></div>
+        <input type="text" id="chat-input" placeholder="Napisz pytanie..." required />
+        <button id="chat-send">Wyślij</button>
+    </div>
 
     <header>
         <a href="#hero" class="logo">
@@ -264,6 +270,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="widget.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
